@@ -1,0 +1,91 @@
+:root {
+    --cor-bege: #F5F5DC;
+    --cor-verde: #28a745;
+    --cor-branco: #ffffff;
+}
+
+body {
+    background-color: var(--cor-branco);
+    font-family: 'Arial', sans-serif;
+}
+
+.bg-bege {
+    background-color: var(--cor-bege) !important;
+}
+
+.text-bege {
+    color: var(--cor-bege) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--cor-verde), #20c997);
+    color: white;
+    padding: 100px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-success {
+    background-color: var(--cor-verde);
+    border-color: var(--cor-verde);
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.gallery-img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    color: white;
+    text-decoration: none;
+}
+
+.section-title {
+    color: var(--cor-verde);
+    border-bottom: 3px solid var(--cor-verde);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.price-card {
+    background: linear-gradient(135deg, var(--cor-bege), #f8f9fa);
+    border-left: 5px solid var(--cor-verde);
+}
