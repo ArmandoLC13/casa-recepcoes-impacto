@@ -1,0 +1,30 @@
+# Arquivos executáveis
+*.exe
+*.msi
+*.dmg
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Node modules (se usar)
+node_modules/
+
+# Vendor (se usar Composer)
+/vendor/
+
+# Environment
+.env
+.env.local
+
+# Cache
+*.cache
