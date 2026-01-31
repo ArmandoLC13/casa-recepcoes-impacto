@@ -1,5 +1,6 @@
 {
   "buildCommand": "",
   "outputDirectory": "public",
-  "installCommand": ""
+  "installCommand": "",
+  "_comment": "Updated 2024-01-31"
 }
