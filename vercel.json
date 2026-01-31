@@ -1,6 +1,11 @@
 {
   "buildCommand": "",
-  "outputDirectory": "public",
+  "outputDirectory": ".",
   "installCommand": "",
-  "_comment": "Updated 2024-01-31 - HTML version"
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/public/$1"
+    }
+  ]
 }
