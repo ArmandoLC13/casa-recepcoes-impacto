@@ -70,10 +70,14 @@ echo "<!DOCTYPE html>
         .contact-icon { font-size: 3rem; color: #28a745; margin-bottom: 1.5rem; }
         .contact-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 1rem; color: #333; }
         
-        /* Download Section */
-        .download-section { background: linear-gradient(135deg, #28a745, #20c997); color: white; padding: 4rem 2rem; text-align: center; margin: 4rem 0; border-radius: 20px; }
-        .download-btn { background: white; color: #28a745; padding: 1rem 2rem; border: none; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; }
-        .download-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(255,255,255,0.3); }
+        /* Instagram Follow Section */
+        .instagram-follow { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); color: white; padding: 4rem 2rem; text-align: center; margin: 4rem 0; border-radius: 20px; position: relative; overflow: hidden; }
+        .instagram-follow::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.1); }
+        .instagram-follow .content { position: relative; z-index: 2; }
+        .instagram-follow h3 { font-size: 2.5rem; margin-bottom: 1rem; font-family: 'Playfair Display', serif; }
+        .instagram-follow p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
+        .instagram-btn { background: white; color: #833ab4; padding: 1.2rem 2.5rem; border: none; border-radius: 50px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; }
+        .instagram-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(255,255,255,0.3); }
         
         /* WhatsApp Button */
         .whatsapp-btn { position: fixed; bottom: 2rem; right: 2rem; background: #25d366; color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; text-decoration: none; box-shadow: 0 8px 30px rgba(37,211,102,0.4); transition: all 0.3s; z-index: 1000; animation: pulse 2s infinite; }
@@ -149,7 +153,7 @@ echo "<!DOCTYPE html>
         <div class='info-grid'>
             <div class='info-card'>
                 <h3><i class='fas fa-heart'></i> Sobre Nós</h3>
-                <p>A Casa de Recepções Impacto oferece flexibilidade, sofisticação e diversidade de ambientes para a realização de diferentes tipos de eventos. Aqui, você e seus convidados encontram beleza, conforto e uma estrutura completa, pensada para transformar cada ocasião em uma experiência memorável. Agende uma visita e descubra nossos espaços internos e externos, ideais para celebrar momentos especiais com estilo e elegância..</p>
+                <p>A Casa de Recepções Impacto oferece flexibilidade, sofisticação e diversidade de ambientes para a realização de diferentes tipos de eventos. Aqui, você e seus convidados encontram beleza, conforto e uma estrutura completa, pensada para transformar cada ocasião em uma experiência memorável. Agende uma visita e descubra nossos espaços internos e externos, ideais para celebrar momentos especiais com estilo e elegância.</p>
             </div>
             <div class='info-card'>
                 <h3><i class='fas fa-home'></i> Espaços e Capacidade</h3>
@@ -267,6 +271,17 @@ echo "<!DOCTYPE html>
         </div>
     </section>
 
+    <!-- Instagram Follow Section -->
+    <section class='instagram-follow'>
+        <div class='content'>
+            <h3><i class='fab fa-instagram'></i> Siga-nos no Instagram!</h3>
+            <p>Acompanhe nossos eventos, dicas e inspirações para tornar seu dia ainda mais especial</p>
+            <a href='https://instagram.com/impactorecepcoes' target='_blank' class='instagram-btn'>
+                <i class='fab fa-instagram'></i> @impactorecepcoes
+            </a>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section class='section' id='contato'>
         <h2>Entre em Contato</h2>
@@ -287,7 +302,7 @@ echo "<!DOCTYPE html>
             <div class='contact-card'>
                 <div class='contact-icon'><i class='fab fa-instagram'></i></div>
                 <h3>Instagram</h3>
-                <p>@casarecepcoes_impacto</p>
+                <p>@impactorecepcoes</p>
                 <p>Siga-nos nas redes sociais</p>
             </div>
             <div class='contact-card'>
