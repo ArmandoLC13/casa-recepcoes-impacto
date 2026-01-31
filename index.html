@@ -321,22 +321,9 @@
     <footer class='footer'>
         <p>&copy; 2024 Casa de Recepções Impacto. Todos os direitos reservados.</p>
         <p>Criando momentos inesquecíveis em Sabará - MG</p>
-        <p id='visitor-counter' style='font-size: 0.9rem; opacity: 0.7; margin-top: 1rem;'>Visitantes: <span id='visit-count'>0</span></p>
     </footer>
     
     <script>
-        // Contador de visitantes
-        function updateVisitorCount() {
-            let visits = localStorage.getItem('casa-impacto-visits');
-            if (!visits) {
-                visits = 0;
-            }
-            visits = parseInt(visits) + 1;
-            localStorage.setItem('casa-impacto-visits', visits);
-            document.getElementById('visit-count').textContent = visits;
-        }
-        
-        // Carrossel de imagens
         const images = [
             'public/Imagens/f3e61461-3947-4ee0-a066-68cfbc1297c1.jfif',
             'public/Imagens/271a2c30-a823-4ec8-97a8-c0e3745ac98e.jfif',
@@ -353,9 +340,6 @@
             document.querySelector('.hero').style.backgroundImage = 
                 'linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(' + images[currentIndex] + ')';
         }, 5000);
-        
-        // Inicializar contador ao carregar a página
-        window.addEventListener('load', updateVisitorCount);
     </script>
 </body>
 </html>
