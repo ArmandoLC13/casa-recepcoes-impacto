@@ -324,6 +324,18 @@
     </footer>
     
     <script>
+        // Contador de visitantes (visível apenas no código)
+        function updateVisitorCount() {
+            let visits = localStorage.getItem('casa-impacto-visits');
+            if (!visits) {
+                visits = 0;
+            }
+            visits = parseInt(visits) + 1;
+            localStorage.setItem('casa-impacto-visits', visits);
+            // Atualizar comentário HTML com contagem
+            console.log('Visitantes:', visits);
+        }
+        
         const images = [
             'public/Imagens/f3e61461-3947-4ee0-a066-68cfbc1297c1.jfif',
             'public/Imagens/271a2c30-a823-4ec8-97a8-c0e3745ac98e.jfif',
@@ -340,6 +352,13 @@
             document.querySelector('.hero').style.backgroundImage = 
                 'linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(' + images[currentIndex] + ')';
         }, 5000);
+        
+        // Inicializar contador ao carregar a página
+        window.addEventListener('load', updateVisitorCount);
     </script>
+    
+    <!-- CONTADOR DE VISITANTES (VISÍVEL APENAS NO CÓDIGO): 
+         Para ver a contagem, abra o Console do navegador (F12) -->
+    <!-- Este contador funciona via localStorage e só é visível para desenvolvedores -->
 </body>
 </html>
