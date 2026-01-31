@@ -4,6 +4,7 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Casa de Recepções Impacto - Eventos Inesquecíveis</title>
+    <link rel='icon' type='image/x-icon' href='data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
     <style>
@@ -321,10 +322,13 @@
     <footer class='footer'>
         <p>&copy; 2024 Casa de Recepções Impacto. Todos os direitos reservados.</p>
         <p>Criando momentos inesquecíveis em Sabará - MG</p>
+        <div style='margin-top: 1rem; padding: 0.5rem; background: rgba(255,255,255,0.1); border-radius: 5px; font-size: 0.8rem;'>
+            <span style='opacity: 0.7;'>📊 Visitantes: </span><span id='visit-count' style='font-weight: bold; color: #ffc107;'>0</span>
+        </div>
     </footer>
     
     <script>
-        // Contador de visitantes (visível apenas no código)
+        // Contador de visitantes
         function updateVisitorCount() {
             let visits = localStorage.getItem('casa-impacto-visits');
             if (!visits) {
@@ -332,8 +336,7 @@
             }
             visits = parseInt(visits) + 1;
             localStorage.setItem('casa-impacto-visits', visits);
-            // Atualizar comentário HTML com contagem
-            console.log('Visitantes:', visits);
+            document.getElementById('visit-count').textContent = visits;
         }
         
         const images = [
@@ -356,9 +359,5 @@
         // Inicializar contador ao carregar a página
         window.addEventListener('load', updateVisitorCount);
     </script>
-    
-    <!-- CONTADOR DE VISITANTES (VISÍVEL APENAS NO CÓDIGO): 
-         Para ver a contagem, abra o Console do navegador (F12) -->
-    <!-- Este contador funciona via localStorage e só é visível para desenvolvedores -->
 </body>
 </html>
