@@ -233,7 +233,7 @@ echo "<!DOCTYPE html>
                     </div>
                 </div>
                 <div>
-                    <img src='Imagens/4eff49ae-9904-49c5-9443-a899520dc59e.jfif' style='width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);' alt='Baile Dançante'>
+                    <img src='Imagens/f1b45508-b7cd-4f0f-8ef6-235b867a62ad.jfif' style='width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);' alt='Baile Dançante'>
                 </div>
             </div>
         </div>
