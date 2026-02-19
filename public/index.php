@@ -205,6 +205,7 @@ echo "<!DOCTYPE html>
             <div class='gallery-item' style='background-image: url(Imagens/f3e61461-3947-4ee0-a066-68cfbc1297c1.jfif);'></div>
             <div class='gallery-item' style='background-image: url(Imagens/764b150f-edda-4145-a214-4233e9416c8f.jfif);'></div>
             <div class='gallery-item' style='background-image: url(Imagens/9404311a-e954-40c0-a79b-a6c61f570d27.jfif);'></div>
+            <div class='gallery-item' style='background-image: url(Imagens/a5e26462-5b0c-4ce5-aa08-998bbdefa3e2.jfif);'></div>
             <div class='gallery-item' style='background-image: url(Imagens/373ff2f0-31ca-4b3f-9605-6669aea153fe.jfif);'></div>
         </div>
     </section>
@@ -232,7 +233,7 @@ echo "<!DOCTYPE html>
                     </div>
                 </div>
                 <div>
-                    <img src='Imagens/download.jfif' style='width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);' alt='Baile Dançante'>
+                    <img src='Imagens/713e0c02-c07c-49fc-8da5-a68ed23c012d.jfif' style='width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);' alt='Baile Dançante'>
                 </div>
             </div>
         </div>
