@@ -64,6 +64,12 @@
         .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
         .gallery-item { height: 250px; background-size: cover; background-position: center; border-radius: 15px; transition: all 0.3s; position: relative; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
         .gallery-item:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        /* Galeria de Eventos */
+        .gallery-eventos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 3rem; }
+        .gallery-eventos .gallery-item { height: 320px; }
+        @media (max-width: 1024px) { .gallery-eventos { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 768px) { .gallery-eventos { grid-template-columns: repeat(2, 1fr); } .gallery-eventos .gallery-item { height: 220px; } }
+        @media (max-width: 480px) { .gallery-eventos { grid-template-columns: 1fr; } }
         
         /* Contact */
         .contact-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem; }
@@ -216,7 +222,7 @@
     <section class='section' id='galeria-eventos'>
         <h2>Galeria de Eventos</h2>
         <p class='section-subtitle'>Momentos especiais dos nossos eventos</p>
-        <div class='gallery'>
+        <div class='gallery-eventos'>
             <div class='gallery-item' style='background-image: url(public/Imagens/38e1111f-53f5-4cb8-a38c-8585d9b1d563.jfif);'></div>
             <div class='gallery-item' style='background-image: url(public/Imagens/5258514e-16ff-4e50-b92f-95ac2f7ae44c.jfif);'></div>
             <div class='gallery-item' style='background-image: url(public/Imagens/7d54184f-4804-4913-b8e2-fa2680229c87.jfif);'></div>
@@ -224,7 +230,6 @@
             <div class='gallery-item' style='background-image: url(public/Imagens/9f3e2656-d45f-4e14-b5cb-06809fd1549f.jfif);'></div>
             <div class='gallery-item' style='background-image: url(public/Imagens/9f4919ea-24b4-488c-9c11-6daf995f9fc3.jfif);'></div>
             <div class='gallery-item' style='background-image: url(public/Imagens/be7507f0-5a6e-4175-9e45-12c29a846075.jfif);'></div>
-            <div class='gallery-item' style='background-image: url(public/Imagens/cfb476f6-b964-4d89-9625-c6447a5b4417.jfif);'></div>
             <div class='gallery-item' style='background-image: url(public/Imagens/f58f27fc-0fcf-44a5-8a7b-d7e2b6fe7aba.jfif);'></div>
         </div>
     </section>
