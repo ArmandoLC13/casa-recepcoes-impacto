@@ -129,9 +129,8 @@
                 <li><a href='#inicio'>Início</a></li>
                 <li><a href='#informacoes'>Informações</a></li>
                 <li><a href='#galeria'>Galeria</a></li>
-                <li><a href='#galeria-eventos'>Galeria de Eventos</a></li>
                 <li><a href='#eventos'>Próximos Eventos</a></li>
-                <li><a href='#galeria-evento'>Galeria do Evento</a></li>
+                <li><a href='#galeria-eventos'>Galeria de Eventos</a></li>
                 <li><a href='#contato'>Contato</a></li>
             </ul>
         </nav>
@@ -185,15 +184,6 @@
         </div>
     </section>
 
-    <!-- Galeria de Eventos -->
-    <section class='section' id='galeria-eventos'>
-        <h2>Galeria de Eventos</h2>
-        <p class='section-subtitle'>Momentos especiais dos nossos eventos</p>
-        <div class='gallery'>
-            <div class='gallery-item' style='background-image: url(public/Imagens/50c9dc5a-49ca-4b6e-8530-5471eda9e59c.jfif);'></div>
-        </div>
-    </section>
-
     <!-- Events Section -->
     <section class='section' id='eventos'>
         <h2>Próximos Eventos</h2>
@@ -222,12 +212,30 @@
         </div>
     </section>
 
-    <!-- Galeria do Evento -->
-    <section class='section' id='galeria-evento'>
-        <h2>Galeria do Evento</h2>
-        <p class='section-subtitle'>Fotos do nosso último evento</p>
+    <!-- Galeria de Eventos -->
+    <section class='section' id='galeria-eventos'>
+        <h2>Galeria de Eventos</h2>
+        <p class='section-subtitle'>Momentos especiais dos nossos eventos</p>
         <div class='gallery'>
             <div class='gallery-item' style='background-image: url(public/Imagens/50c9dc5a-49ca-4b6e-8530-5471eda9e59c.jfif);'></div>
+            <!-- foto 2: troque pelo nome da imagem -->
+            <!-- <div class='gallery-item' style='background-image: url(public/Imagens/NOME.jfif);'></div> -->
+            <!-- foto 3 -->
+            <!-- <div class='gallery-item' style='background-image: url(public/Imagens/NOME.jfif);'></div> -->
+            <!-- foto 4 -->
+            <!-- <div class='gallery-item' style='background-image: url(public/Imagens/NOME.jfif);'></div> -->
+            <!-- foto 5 -->
+            <!-- <div class='gallery-item' style='background-image: url(public/Imagens/NOME.jfif);'></div> -->
+            <!-- foto 6 -->
+            <!-- <div class='gallery-item' style='background-image: url(public/Imagens/NOME.jfif);'></div> -->
+            <!-- foto 7 -->
+            <!-- <div class='gallery-item' style='background-image: url(public/Imagens/NOME.jfif);'></div> -->
+            <!-- foto 8 -->
+            <!-- <div class='gallery-item' style='background-image: url(public/Imagens/NOME.jfif);'></div> -->
+            <!-- foto 9 -->
+            <!-- <div class='gallery-item' style='background-image: url(public/Imagens/NOME.jfif);'></div> -->
+            <!-- foto 10 -->
+            <!-- <div class='gallery-item' style='background-image: url(public/Imagens/NOME.jfif);'></div> -->
         </div>
     </section>
 
@@ -286,34 +294,6 @@
     </footer>
     
     <script>
-        // Galeria do evento - adicione os nomes das fotos aqui
-        const eventPhotos = [
-            // Coloque aqui os nomes das fotos do evento
-            // Exemplo: 'public/Imagens/foto-evento1.jfif'
-        ];
-        const galeriaEvento = document.getElementById('galeria-evento-fotos');
-        if (eventPhotos.length > 0) {
-            eventPhotos.forEach(photo => {
-                const div = document.createElement('div');
-                div.className = 'gallery-item';
-                div.style.backgroundImage = `url(${photo})`;
-                galeriaEvento.appendChild(div);
-            });
-        } else {
-            document.getElementById('galeria-evento').style.display = 'none';
-        }
-
-        // Contador de visitantes
-        function updateVisitorCount() {
-            let visits = localStorage.getItem('casa-impacto-visits');
-            if (!visits) {
-                visits = 0;
-            }
-            visits = parseInt(visits) + 1;
-            localStorage.setItem('casa-impacto-visits', visits);
-            document.getElementById('visit-count').textContent = visits;
-        }
-        
         const images = [
             'public/Imagens/f3e61461-3947-4ee0-a066-68cfbc1297c1.jfif',
             'public/Imagens/271a2c30-a823-4ec8-97a8-c0e3745ac98e.jfif',
@@ -330,9 +310,6 @@
             document.querySelector('.hero').style.backgroundImage = 
                 'linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url(' + images[currentIndex] + ')';
         }, 5000);
-        
-        // Inicializar contador ao carregar a página
-        window.addEventListener('load', updateVisitorCount);
     </script>
 </body>
 </html>
