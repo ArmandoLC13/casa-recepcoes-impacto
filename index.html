@@ -129,6 +129,7 @@
                 <li><a href='#inicio'>Início</a></li>
                 <li><a href='#informacoes'>Informações</a></li>
                 <li><a href='#galeria'>Galeria</a></li>
+                <li><a href='#galeria-evento'>Galeria do Evento</a></li>
                 <li><a href='#contato'>Contato</a></li>
             </ul>
         </nav>
@@ -204,9 +205,17 @@
                     </div>
                 </div>
                 <div>
-                    <img src='public/Imagens/f1b45508-b7cd-4f0f-8ef6-235b867a62ad.jfif' style='width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);' alt='Baile Dançante'>
+                    <img src='public/Imagens/50c9dc5a-49ca-4b6e-8530-5471eda9e59c.jfif' style='width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);' alt='Baile Dançante'>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Galeria do Evento -->
+    <section class='section' id='galeria-evento'>
+        <h2>Galeria do Evento</h2>
+        <p class='section-subtitle'>Fotos do nosso último evento</p>
+        <div class='gallery' id='galeria-evento-fotos'>
         </div>
     </section>
 
@@ -268,6 +277,23 @@
     </footer>
     
     <script>
+        // Galeria do evento - adicione os nomes das fotos aqui
+        const eventPhotos = [
+            // Coloque aqui os nomes das fotos do evento
+            // Exemplo: 'public/Imagens/foto-evento1.jfif'
+        ];
+        const galeriaEvento = document.getElementById('galeria-evento-fotos');
+        if (eventPhotos.length > 0) {
+            eventPhotos.forEach(photo => {
+                const div = document.createElement('div');
+                div.className = 'gallery-item';
+                div.style.backgroundImage = `url(${photo})`;
+                galeriaEvento.appendChild(div);
+            });
+        } else {
+            document.getElementById('galeria-evento').style.display = 'none';
+        }
+
         // Contador de visitantes
         function updateVisitorCount() {
             let visits = localStorage.getItem('casa-impacto-visits');
